@@ -4,7 +4,7 @@
   "description": "Formatting dates with English prepositions",
   "main": "ephemeral.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test/tap.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,10 @@
   "homepage": "https://github.com/jameswomack/ephemeral",
   "dependencies": {
     "moment": "~2.5.1"
+  },
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "brofist": "~0.3.1",
+    "brofist-tap": "~0.2.0"
   }
 }
