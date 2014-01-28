@@ -1,0 +1,30 @@
+{
+  "name": "ephemeral",
+  "version": "0.0.1",
+  "description": "Formatting dates with English prepositions",
+  "main": "ephemeral.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jameswomack/ephemeral"
+  },
+  "keywords": [
+    "Dates",
+    "moment",
+    "formatting",
+    "prepositions",
+    "formatter",
+    "filter"
+  ],
+  "author": "James J. Womack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jameswomack/ephemeral/issues"
+  },
+  "homepage": "https://github.com/jameswomack/ephemeral",
+  "dependencies": {
+    "moment": "~2.5.1"
+  }
+}
