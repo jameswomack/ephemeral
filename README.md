@@ -1,8 +1,11 @@
 # Ephemeral
-## Formatting dates with English prepositions
+## Formatting dates with English prepositions & holiday names
 
 ### Installation
 `npm install ephemeral`
+
+### Testing
+`npm test`
 
 ### Example Usage
 ```
@@ -21,6 +24,7 @@ console.info(sentence);
 ### Available Methods
 * `date()`
   * `-> 'on January 27, 2020'`
+  * `-> 'on Independence Day'`
 * `day()`
   * `-> 'on Monday'`
 * `year()`

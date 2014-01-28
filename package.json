@@ -1,7 +1,7 @@
 {
   "name": "ephemeral",
-  "version": "0.0.1",
-  "description": "Formatting dates with English prepositions",
+  "version": "0.0.2",
+  "description": "Formatting dates with English prepositions & holiday names",
   "main": "ephemeral.js",
   "scripts": {
     "test": "node ./test/tap.js"

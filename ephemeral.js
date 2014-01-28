@@ -1,5 +1,7 @@
 var moment = require('moment');
+require('./lib/moment.holiday');
 
+var dayRegexp = /d/ig;
 
 function Ephemeral(date) {
   this._date = date;
@@ -10,7 +12,6 @@ function prepositionToUseForDateFormat(dateFormat) {
     throw new Error('Cannot pass non-String to prepositionToUseForDateFormat');
   }
 
-  var dayRegexp = /d/ig;
   var prepositionToUse;
 
   if (dateFormat.match(dayRegexp)) {
@@ -30,7 +31,11 @@ function prepositionToUseForDateFormat(dateFormat) {
 
 
 function formattedDate(date, format) {
-  var formatted = moment(date).format(format);
+  var holiday;
+  var momentObject = moment(date);
+  var showIfHoliday = format.match(dayRegexp);
+
+  var formatted = (showIfHoliday && (holiday = momentObject.holiday())) ? holiday : momentObject.format(format);
   return formatted;
 }
 
