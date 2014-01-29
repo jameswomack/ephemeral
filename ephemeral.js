@@ -3,9 +3,9 @@ require('./lib/moment.holiday');
 
 var dayRegexp = /d/ig;
 
-function Ephemeral(date) {
+var Ephemeral = function Ephemeral(date) {
   this._date = date;
-}
+};
 
 function prepositionToUseForDateFormat(dateFormat) {
   if (typeof dateFormat !== 'string') {
@@ -72,6 +72,4 @@ Ephemeral.prototype.formattedDateWithPreposition = function(format) {
 };
 
 
-module.exports = (function EphemeralCreator(date) {
-  return new Ephemeral(date);
-});
+module.exports = Ephemeral;
