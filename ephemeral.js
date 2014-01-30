@@ -56,7 +56,10 @@ var formats = {
 
 
 function addFormatMethodToEphemeral(key) {
-  Ephemeral.prototype[key] = function() {
+  Ephemeral.prototype[key] = function(sansPreposition) {
+    if (sansPreposition) {
+      return formattedDate(this._date, formats[key]);
+    }
     return formattedDateWithPreposition(this._date, formats[key]);
   };
 }
