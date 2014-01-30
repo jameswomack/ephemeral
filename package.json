@@ -1,6 +1,6 @@
 {
   "name": "ephemeral",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Formatting dates with English prepositions & holiday names",
   "main": "ephemeral.js",
   "scripts": {

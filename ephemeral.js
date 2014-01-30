@@ -72,4 +72,9 @@ Ephemeral.prototype.formattedDateWithPreposition = function(format) {
 };
 
 
+Ephemeral.prototype.formattedDate = function(format) {
+  return formattedDate(this._date, format);
+};
+
+
 module.exports = Ephemeral;
