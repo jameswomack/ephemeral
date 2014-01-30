@@ -47,11 +47,11 @@ function formattedDateWithPreposition(date, format) {
 
 
 var formats = {
-  date: 'MMMM DDDo, YYYY',
+  date: 'MMMM Do, YYYY',
   day: 'dddd',
   year: 'YYYY',
   month: 'MMMM',
-  dayOrdinal: 'DDDo'
+  dayOrdinal: 'Do'
 };
 
 
